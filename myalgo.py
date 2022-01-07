@@ -52,11 +52,11 @@ graph_json = client.get_graph()
 FONT = pygame.font.SysFont('Arial', 20, bold=True)
 
 #initializing players:
-pika = pygame.image.load('../data/FixedPicachu.png')
-chari = pygame.image.load('../data/Charizard.png')
-ash = pygame.image.load('../data/FixedAsh.png')
-bg = pygame.image.load('../data/forest.jpg')
-quitLogo = pygame.image.load('../data/FixedQuit.png')
+pika = pygame.image.load('data/FixedPicachu.png')
+chari = pygame.image.load('data/Charizard.png')
+ash = pygame.image.load('data/FixedAsh.png')
+bg = pygame.image.load('data/forest.jpg')
+quitLogo = pygame.image.load('data/FixedQuit.png')
 
 graphAlgo = GraphAlgo()
 # get info from the server before the game start
@@ -64,7 +64,7 @@ get_info= client.get_info()
 info=json.loads(get_info)
 info=info['GameServer']
 case= info['graph']
-graphAlgo.load_from_json('../'+str(case))
+graphAlgo.load_from_json(str(case))
 
 propor:tuple = findEdges(graphAlgo.get_graph())
 min_x=propor[0]
