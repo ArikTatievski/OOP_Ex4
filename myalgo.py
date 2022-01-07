@@ -89,7 +89,7 @@ def my_scale(data, x=False, y=False):
 
 radius = 15
 # return the shortest path and the id of the node we should reach to collect the pokeimon
-def _allocateAnAgent(agent_src:int,pokemons:list,graphAlgo:GraphAlgo)-> (float,int):
+def _allocateAnAgent(agent_src:int,pokemons:list,graphAlgo:GraphAlgo):
     minpath = float("inf")
     movelist:list
     edgeToMove:Edge
