@@ -1,5 +1,5 @@
 # Authors:
-Arik Tatievski, 208997056 Roi Meshulam, 315635649
+Arik Tatievski Roi Meshulam
 
 # What is this project?
 This project displays a simple pokemon game. You have pokemon collectors(Agents) and pokemons on weighed edges. We must catch as many pokemons as we can.
